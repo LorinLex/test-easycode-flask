@@ -1,0 +1,24 @@
+[project]
+name = "test-easycode-flask"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Emil Muhitdinov",email = "laizybot@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10, <4.0"
+dependencies = [
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
+    "flask (>=3.1.0,<4.0.0)",
+    "loguru (>=0.7.3,<0.8.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.6"
+mypy = "^1.15.0"
+
